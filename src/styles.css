@@ -32,3 +32,13 @@ body {
     margin: 0 10px;
   }
   
+  /* Mobile view */
+@media (max-width: 200px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
