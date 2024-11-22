@@ -1,0 +1,95 @@
+/* Styling for Home Section */
+.home-section {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Tagline */
+.tagline h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Image Styling */
+.home-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  margin-top: 30px;
+}
+
+.cta-button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  background-color: #4CAF50;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+
+/* Introductory Text */
+.intro-text {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Key Impact Stats */
+.impact-stats h3 {
+  font-size: 1.8rem;
+  color: #4CAF50;
+  margin-top: 40px;
+}
+
+.impact-stats ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.impact-stats li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.home-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.home-image {
+  width: 32%; /* Adjust width as needed */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
+
