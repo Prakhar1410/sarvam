@@ -1,44 +1,468 @@
+/* Light Mode Styles (Default) */
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* White background for light mode */
+  color: #333; /* Dark text for light mode */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background for dark mode */
+  color: #e0e0e0; /* Light text for dark mode */
+}
+
+/* Header styles */
+.header {
+  background-color: #264653; /* Adjusted for green tone */
+  color: #fff;
+  padding: 10px 30px;
+}
+
+/* Dark mode header */
+body.dark-mode .header {
+  background-color: #333; /* Darker background for header */
+}
+
+.nav ul li a {
+  color: #fff;
+}
+
+body.dark-mode .nav ul li a {
+  color: #e0e0e0; /* Light text for links in dark mode */
+}
+
+/* Home section styles */
+.home-section {
+  background-color: #f4f4f4; /* Light background for home */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+body.dark-mode .home-section {
+  background-color: #333; /* Dark background for home section */
+  color: #e0e0e0; /* Light text for home section */
+}
+
+/* About section styles */
+.about-us {
+  background-color: #f4f4f4; /* Light background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-us h2,
+.about-us h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #264653; /* Primary color for headings */
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333; /* Dark text color */
+}
+
+body.dark-mode .about-us {
+  background-color: #333; /* Dark background for about section */
+  color: #e0e0e0; /* Light text for about section */
+}
+
+body.dark-mode .about-us h2,
+body.dark-mode .about-us h3 {
+  color: #e9c46a; /* Accent color in dark mode */
+}
+
+body.dark-mode .about-us p {
+  color: #e0e0e0; /* Light text in dark mode */
+}
+
+/* Get Involved Section Styles */
+.get-involved {
+  background-color: #f4f4f4; /* Light background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.get-involved h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #264653; /* Primary color for headings */
+}
+
+.get-involved .options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.get-involved .options .card {
+  background-color: white;
+  padding: 30px;
+  margin: 20px;
+  width: 250px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.get-involved .options .card h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #264653; /* Accent color for heading */
+}
+
+.get-involved .options .card p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333; /* Default text color */
+}
+
+.get-involved .options button {
+  background-color: #f1c40f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.get-involved .options button:hover {
+  background-color: #e0b106;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .get-involved {
+  background-color: #333; /* Dark background for get-involved section */
+  color: #e0e0e0; /* Light text for section */
+}
+
+body.dark-mode .get-involved h2 {
+  color: #e9c46a; /* Accent color for heading */
+}
+
+body.dark-mode .get-involved .options .card {
+  background-color: #444; /* Dark background for cards */
+  color: #e0e0e0; /* Light text for cards */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Light shadow */
+}
+
+body.dark-mode .get-involved .options .card h3 {
+  color: #e9c46a; /* Accent color for headings in dark mode */
+}
+
+body.dark-mode .get-involved .options .card p {
+  color: #e0e0e0; /* Light text for card description in dark mode */
+}
+
+body.dark-mode .get-involved .options button {
+  background-color: #f39c12; /* Button color for dark mode */
+  color: white;
+}
+
+body.dark-mode .get-involved .options button:hover {
+  background-color: #e67e22; /* Hover color for button */
+}
+
+/* Contact Us section styles */
+.contact-us {
+  background-color: #f4f4f4; /* Light background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #264653; /* Primary color for headings */
+}
+
+.contact-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-us li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333; /* Dark text color */
+}
+
+body.dark-mode .contact-us {
+  background-color: #333; /* Dark background for contact section */
+  color: #e0e0e0; /* Light text for contact section */
+}
+
+body.dark-mode .contact-us h2 {
+  color: #e9c46a; /* Accent color for headings in dark mode */
+}
+
+/* Ensure list items are styled correctly */
+body.dark-mode .contact-us ul li {
+  color: #e0e0e0 !important; /* Light text for list items in dark mode */
+}
+
+/* Donate section styles */
+body.dark-mode .donate-section {
+  background-color: #333; /* Dark background */
+  color: #e0e0e0; /* Light text */
+}
+
+body.dark-mode .donate-section h2 {
+  color: #e9c46a; /* Accent color for headings in dark mode */
+}
+
+body.dark-mode .donate-section input {
+  background-color: #444; /* Dark background for input */
+  color: #e0e0e0; /* Light text for input */
+  border: 1px solid #555; /* Adjusted border for dark mode */
+}
+
+body.dark-mode .donate-section button {
+  background-color: #e0b106; /* Adjusted button color for dark mode */
+  color: #121212; /* Dark text on button for contrast */
+}
+
+body.dark-mode .donate-section button:hover {
+  background-color: #c49706; /* Hover effect for dark mode */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.footer .links a {
+  color: #4CAF50;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1rem;  /* Adjust the font size */
+}
+
+.footer .links a:hover {
+  color: #e9c46a;
+}
+
+.footer .newsletter {
+  margin-top: 15px;
+}
+
+.footer .newsletter input[type='email'] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.footer .newsletter button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer .newsletter button:hover {
+  background-color: #fff;
+  color: #4CAF50;
+  transition: 0.3s ease;
+}
+
+/* Social Media Icons */
+.footer .social-media {
+  margin-top: 15px;
+}
+
+.footer .social-media .social-icon {
+  color: #4CAF50;
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+
+.footer .social-media .social-icon:hover {
+  color: #e9c46a;
+}
+
+/* Dark Mode Footer */
+body.dark-mode .footer {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .footer .links a,
+body.dark-mode .footer .social-media .social-icon {
+  color: #e0e0e0;
+}
+
+body.dark-mode .footer .links a:hover,
+body.dark-mode .footer .social-media .social-icon:hover {
+  color: #e9c46a;
+}
+
+body.dark-mode .footer .newsletter button {
+  background-color: #e9c46a;
+}
+
+body.dark-mode .footer .newsletter button:hover {
+  background-color: #fff;
+  color: #e9c46a;
+}
+
+/* Light Mode Styles */
+.programs {
+  background-color: #f1f1f1; /* Light background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.programs h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #264653; /* Primary color for headings */
+}
+
+.program-card {
+  background-color: white; /* Light background for program cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.program-card:hover {
+  transform: translateY(-10px);
+}
+
+.program-card h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #264653; /* Primary color for program card headings */
+}
+
+.program-card p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333; /* Dark text for descriptions */
+}
+
+.program-card button {
+  background-color: #f39c12; /* Button background color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.program-card button:hover {
+  background-color: #e67e22; /* Hover effect for button */
+}
+
+/* Dark Mode Styles */
+body.dark-mode .programs {
+  background-color: #333; /* Dark background for the programs section */
+  color: #e0e0e0; /* Light text color for the programs section */
+}
+
+body.dark-mode .programs h2 {
+  color: #e9c46a; /* Accent color for headings in dark mode */
+}
+
+body.dark-mode .program-card {
+  background-color: #2b2b2b; /* Dark background for program cards */
+  color: #e0e0e0; /* Light text color for program cards */
+}
+
+body.dark-mode .program-card:hover {
+  transform: translateY(-10px);
+  background-color: #444; /* Darker background for hover effect */
+}
+
+body.dark-mode .program-card h3 {
+  color: #e9c46a; /* Accent color for headings in dark mode */
+}
+
+body.dark-mode .program-card p {
+  color: #e0e0e0; /* Light text for description in dark mode */
+}
+
+body.dark-mode .program-card button {
+  background-color: #f39c12; /* Maintain the button color */
+  color: white;
+}
+
+body.dark-mode .program-card button:hover {
+  background-color: #e67e22; /* Maintain hover effect color */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .home-section {
-    background-color: #f5f5f5;
-    padding: 50px 0;
+
+  .logo-img {
+    width: 100px;
   }
-  
-  .home-section .tagline {
-    font-size: 24px;
-    color: #333;
+
+  .about-us h2,
+  .contact-us h2 {
+    font-size: 2rem;
   }
-  
-  .cta-buttons .btn {
-    margin: 10px;
+
+  .about-us p,
+  .contact-us li {
+    font-size: 1rem;
   }
-  
-  .impact-stats {
-    background-color: #f8f9fa;
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-  }
-  
-  footer a {
-    color: white;
-    margin: 0 10px;
-  }
-  
-  /* Mobile view */
-@media (max-width: 200px) {
-  body {
-    font-size: 14px;
-  }
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
+}
+
+/* Icon Handling for Light/Dark Mode */
+.light-mode-icon {
+  display: block; /* Show light mode icon by default */
+}
+
+.dark-mode-icon {
+  display: none; /* Hide dark mode icon by default */
+}
+
+body.dark-mode .light-mode-icon {
+  display: none; /* Hide light mode icon when dark mode is on */
+}
+
+body.dark-mode .dark-mode-icon {
+  display: block; /* Show dark mode icon when dark mode is on */
 }

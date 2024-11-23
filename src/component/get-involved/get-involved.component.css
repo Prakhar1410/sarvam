@@ -18,18 +18,21 @@
   text-align: center;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .options h3 {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #264653; /* Accent color for heading */
 }
 
 .options h4 {
   font-size: 1.5rem;
   font-weight: normal;
   margin-bottom: 10px;
+  color: #e9c46a; /* Accent color for sub-heading */
 }
 
 .options ul {
@@ -40,6 +43,7 @@
 .options ul li {
   font-size: 1.2rem;
   margin-bottom: 10px;
+  color: #333; /* Default text color */
 }
 
 .options button {
@@ -54,4 +58,14 @@
 
 .options button:hover {
   background-color: #e0b106;
+}
+
+@media (max-width: 768px) {
+  .options {
+    flex-direction: column;
+    align-items: center;
+  }
+  .options div {
+    width: 80%; /* Make the card sections take full width on smaller screens */
+  }
 }

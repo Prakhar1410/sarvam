@@ -1,11 +1,17 @@
-/* Styling for Home Section */
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Home Section */
 .home-section {
   background-color: #f4f4f4;
   padding: 40px 0;
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
 }
@@ -14,52 +20,77 @@
 .tagline h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #333;
+  color: inherit;
 }
 
-/* Image Styling */
-.home-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+/* Image Section */
+.home-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
   margin-top: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 }
 
-/* CTA Buttons */
+.home-images img {
+  width: 32%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.home-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
 .cta-buttons {
   margin-top: 30px;
 }
 
 .cta-button {
-  padding: 12px 25px;
+  padding: 10px 20px;
   font-size: 1rem;
-  margin: 10px;
-  cursor: pointer;
-  border: none;
-  border-radius: 25px;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: #264653; /* Green tone */
+  border: none;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #45a049;
+  background-color: #1d3557; /* Slightly darker shade */
+}
+
+.donate {
+  background-color: #2a9d8f; /* Soft green tone */
+}
+
+.donate:hover {
+  background-color: #219a80; /* Slightly darker shade */
+}
+
+.join-us {
+  background-color: #457b9d; /* Soft blue tone */
+}
+
+.join-us:hover {
+  background-color: #34668c; /* Slightly darker shade */
 }
 
 /* Introductory Text */
-.intro-text {
+.intro-text p {
   margin-top: 30px;
   font-size: 1.2rem;
-  color: #666;
   line-height: 1.6;
+  color: inherit;
 }
 
-/* Key Impact Stats */
+/* Impact Stats */
 .impact-stats h3 {
   font-size: 1.8rem;
-  color: #4CAF50;
   margin-top: 40px;
+  color: #2a9d8f;
 }
 
 .impact-stats ul {
@@ -70,26 +101,36 @@
 .impact-stats li {
   font-size: 1.2rem;
   margin: 10px 0;
-  color: #333;
+  color: inherit;
 }
 
-.home-images {
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  margin-top: 20px;
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home-images img {
+    width: 48%;
+  }
+
+  .cta-button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .impact-stats ul {
+    text-align: left;
+  }
 }
 
-.home-image {
-  width: 32%; /* Adjust width as needed */
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+@media (max-width: 480px) {
+  .home-images img {
+    width: 100%;
+  }
+
+  .cta-button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .intro-text p {
+    font-size: 1rem;
+  }
 }
-
-.home-image:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
-
-

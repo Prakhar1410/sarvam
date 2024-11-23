@@ -1,30 +1,12 @@
 <section class="programs">
   <h2>Our Programs</h2>
 
-  <!-- Child Education Program Card -->
-  <div class="program-card">
-    <h3>Child Education</h3>
-    <p>We aim to bridge the educational gap for children in underserved communities.</p>
-    <a routerLink="/programs/child-education">
-      <button class="btn-primary">Learn More</button>
-    </a>
-  </div>
-
-  <!-- Mental Health Services Program Card -->
-  <div class="program-card">
-    <h3>Mental Health Services</h3>
-    <p>We offer counseling, community workshops, and wellness resources.</p>
-    <a routerLink="/programs/mental-health">
-      <button class="btn-primary">Learn More</button>
-    </a>
-  </div>
-
-  <!-- Women Empowerment Program Card -->
-  <div class="program-card">
-    <h3>Women Empowerment</h3>
-    <p>Our programs provide skill-building, financial literacy, and leadership opportunities.</p>
-    <a routerLink="/programs/women-empowerment">
-      <button class="btn-primary">Learn More</button>
+  <!-- Render all program cards dynamically -->
+  <div *ngFor="let program of programs" class="program-card">
+    <h3>{{ program.name }}</h3>
+    <p>{{ program.description }}</p>
+    <a [routerLink]="program.link">
+      <button class="btn-primary p-button p-component">Learn More</button>
     </a>
   </div>
 </section>

@@ -1,77 +1,86 @@
-/* Common Styles for Each Program Detail Page */
+/* Light Mode Styles */
 .program-detail {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-  
-  .program-detail h2 {
-    font-size: 2.8rem;
-    color: #2c3e50;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .program-detail p {
-    font-size: 1.2rem;
-    color: #7f8c8d;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  
-  .program-detail h3 {
-    font-size: 2rem;
-    color: #2c3e50;
-    margin-top: 30px;
-    margin-bottom: 15px;
-  }
-  
-  .program-detail ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .program-detail ul li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #7f8c8d;
-  }
-  
-  .program-detail .cta-button {
-    background-color: #f39c12;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s;
-    margin-top: 20px;
-  }
-  
-  .program-detail .cta-button:hover {
-    background-color: #e67e22;
-  }
-  
-  @media (max-width: 768px) {
-    .program-detail {
-      padding: 20px 10px;
-    }
-  
-    .program-detail h2 {
-      font-size: 2.2rem;
-    }
-  
-    .program-detail h3 {
-      font-size: 1.8rem;
-    }
-  
-    .program-detail p {
-      font-size: 1.1rem;
-    }
-  }
-  
+  background-color: #ffffff; /* Light background for program details */
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.program-detail h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #264653; /* Primary color for headings */
+}
+
+.program-detail p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333; /* Dark text for description */
+  margin-bottom: 30px;
+}
+
+.program-detail h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #264653; /* Primary color for subheadings */
+}
+
+.program-detail ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.program-detail ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333; /* Dark text color for list items */
+}
+
+.program-detail .cta-button {
+  background-color: #f39c12;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.program-detail .cta-button:hover {
+  background-color: #e67e22;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .program-detail {
+  background-color: #333; /* Dark background for program details */
+  color: #e0e0e0; /* Light text color */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .program-detail h2,
+body.dark-mode .program-detail h3 {
+  color: #e9c46a; /* Accent color for headings in dark mode */
+}
+
+body.dark-mode .program-detail p {
+  color: #e0e0e0; /* Light text for description in dark mode */
+}
+
+body.dark-mode .program-detail ul li {
+  color: #e0e0e0; /* Light text for list items in dark mode */
+}
+
+body.dark-mode .program-detail .cta-button {
+  background-color: #f39c12; /* Maintain the button color */
+  color: white;
+}
+
+body.dark-mode .program-detail .cta-button:hover {
+  background-color: #e67e22; /* Maintain hover effect color */
+}
