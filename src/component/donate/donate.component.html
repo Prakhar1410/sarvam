@@ -1,8 +1,7 @@
-<div class="donate-section text-center">
-    <h2>Make a Donation</h2>
-    <form (ngSubmit)="initiateDonation()">
-      <input type="number" [(ngModel)]="amount" name="amount" placeholder="Enter Amount (INR)" required />
-      <button type="submit" class="btn btn-primary">Donate Now</button>
-    </form>
-  </div>
-  
+<div class="donate-section">
+  <h2>Make a Donation</h2>
+  <form (ngSubmit)="initiateDonation()">
+    <input type="number" [(ngModel)]="amount" name="amount" placeholder="Enter Amount (INR)" required />
+    <button type="submit" class="btn-primary">Donate Now</button>
+  </form>
+</div>

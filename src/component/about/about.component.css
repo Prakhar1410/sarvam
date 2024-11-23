@@ -1,35 +1,60 @@
 .about-us {
-    background-color: #f4f4f4;
-    padding: 60px 20px;
-    text-align: center;
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-content p-card {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-content h3 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-content li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    padding: 40px 15px;
   }
-  
+
   .about-content h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 2rem;
   }
-  
+
   .about-content h3 {
-    font-size: 1.8rem;
-    margin-top: 30px;
-    font-weight: bold;
+    font-size: 1.5rem;
   }
-  
+
   .about-content p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
+    font-size: 1rem;
   }
-  
-  .about-content ul {
-    list-style: none;
-    padding: 0;
-  }
-  
+
   .about-content li {
-    font-size: 1.1rem;
-    margin: 10px 0;
+    font-size: 1rem;
   }
-  
+}

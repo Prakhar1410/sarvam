@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [FormsModule],
   templateUrl: './donate.component.html',
-  styleUrl: './donate.component.css'
+  styleUrl: './donate.component.css',
 })
 export class DonateComponent {
   amount: number = 0;
@@ -14,5 +14,4 @@ export class DonateComponent {
   initiateDonation() {
     alert(`Donation of ₹${this.amount} initiated!`);
   }
-
 }

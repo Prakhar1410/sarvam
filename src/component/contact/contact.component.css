@@ -1,20 +1,47 @@
 .contact-us {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
+  background-color: #f4f4f4; /* Light background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #264653; /* Primary color for headings */
+}
+
+.contact-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-us li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333; /* Dark text color */
+}
+
+/* Dark mode styles */
+body.dark-mode .contact-us {
+  background-color: #333; /* Dark background for contact section */
+  color: #e0e0e0; /* Light text for contact section */
+}
+
+body.dark-mode .contact-us h2 {
+  color: #e9c46a; /* Accent color for headings in dark mode */
+}
+
+body.dark-mode .contact-us li {
+  color: #e0e0e0; /* Light text for list items in dark mode */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   .contact-us h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+    font-size: 2rem;
   }
-  
-  .contact-us ul {
-    list-style: none;
-    padding: 0;
-  }
-  
+
   .contact-us li {
-    font-size: 1.2rem;
-    margin: 10px 0;
+    font-size: 1rem;
   }
-  
+}

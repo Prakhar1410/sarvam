@@ -1,18 +1,22 @@
 <header class="header">
-    <div class="container">
-      <div class="logo">
-        <img src="assets/logo_a.jpg" alt="SARVAM NGO Logo" class="logo-img" />
-      </div>
-      <nav class="nav">
-        <ul>
-          <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-          <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
-          <li><a routerLink="/programs" routerLinkActive="active">Programs</a></li>
-          <li><a routerLink="/get-involved" routerLinkActive="active">Get Involved</a></li>
-          <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-          <li><a routerLink="/donate" routerLinkActive="active">Donate</a></li>
-        </ul>
-      </nav>
+  <div class="container">
+    <div class="logo">
+      <img src="assets/logo.jpg" alt="SARVAM NGO Logo" class="logo-img" />
+      <span class="logo-name">Sarvam</span>
     </div>
-  </header>
-  
+    <nav class="nav">
+      <ul>
+        <li><a routerLink="/home" routerLinkActive="active"><i class="pi pi-home"></i> Home</a></li>
+        <li><a routerLink="/about" routerLinkActive="active"><i class="pi pi-info-circle"></i> About Us</a></li>
+        <li><a routerLink="/programs" routerLinkActive="active"><i class="pi pi-list"></i> Programs</a></li>
+        <li><a routerLink="/get-involved" routerLinkActive="active"><i class="pi pi-users"></i> Get Involved</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active"><i class="pi pi-phone"></i> Contact</a></li>
+        <li><a routerLink="/donate" routerLinkActive="active"><i class="pi pi-indian-rupee"></i> Donate</a></li>
+      </ul>
+    </nav>
+    <!-- Dark Mode Icon -->
+    <div class="dark-mode-icon" (click)="toggleDarkMode()">
+      <i [class]="iconClass"></i> <!-- Dynamic icon based on dark mode status -->
+    </div>
+  </div>
+</header>

@@ -1,51 +1,77 @@
+/* Footer styles */
 .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 10px;
-    font-size: 0.9rem;
-  }
-  
-  .footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .footer .links a,
-  .footer .social-media a {
-    color: #4CAF50;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  .footer .links a:hover,
-  .footer .social-media a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer .newsletter {
-    margin-top: 15px;
-  }
-  
-  .footer .newsletter input[type='email'] {
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
-  }
-  
-  .footer .newsletter button {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .footer .newsletter button:hover {
-    background-color: #fff;
-    color: #4CAF50;
-    transition: 0.3s ease;
-  }
-  
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .links a,
+.footer .social-media a {
+  color: #4CAF50;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer .links a:hover,
+.footer .social-media a:hover {
+  text-decoration: underline;
+}
+
+.footer .newsletter {
+  margin-top: 15px;
+}
+
+.footer .newsletter input[type='email'] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.footer .newsletter button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer .newsletter button:hover {
+  background-color: #fff;
+  color: #4CAF50;
+  transition: 0.3s ease;
+}
+
+/* Dark Mode Footer */
+body.dark-mode .footer {
+  background-color: #121212;  /* Darker background for footer */
+  color: #e0e0e0;  /* Lighter text color in dark mode */
+}
+
+body.dark-mode .footer .links a,
+body.dark-mode .footer .social-media a {
+  color: #e0e0e0;  /* Lighter link colors in dark mode */
+}
+
+body.dark-mode .footer .links a:hover,
+body.dark-mode .footer .social-media a:hover {
+  text-decoration: underline;
+  color: #e9c46a;  /* Accent color for links in dark mode */
+}
+
+body.dark-mode .footer .newsletter button {
+  background-color: #e9c46a;  /* Light accent color for button in dark mode */
+}
+
+body.dark-mode .footer .newsletter button:hover {
+  background-color: #fff;
+  color: #e9c46a;
+}
