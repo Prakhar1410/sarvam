@@ -4,6 +4,29 @@
       <h2>Empowering Lives, Building Futures</h2>
     </div>
 
+    <div class="upcoming-programs">
+      <h2>Upcoming Programs</h2>
+      <p-carousel 
+  [value]="upcomingPrograms" 
+  [numVisible]="1" 
+  [numScroll]="1" 
+  [circular]="true" 
+  [autoplayInterval]="3000">
+  <ng-template let-program pTemplate="item">
+    <div 
+      class="program-slide" 
+      [style.backgroundImage]="'url(' + program.image + ')'"
+    >
+      <div class="program-content">
+        <h4>{{ program.title }}</h4>
+        <p>{{ program.description }}</p>
+        <p><strong>{{ program.date }}</strong></p>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>
+    </div>
+
     <!-- Image Section -->
     <div class="home-images">
       <img src="assets/image1.jpg" alt="Inspiring children learning" class="home-image" />
