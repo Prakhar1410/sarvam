@@ -176,7 +176,6 @@ body {
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url('/assets/image1.jpg'); /* Example image */
   filter: brightness(0.7); /* Darken the image for better text readability */
   z-index: 1; /* Place image below the content */
 }
@@ -250,4 +249,39 @@ body {
   .program-slide {
     height: 250px; /* Increase height slightly for better visibility */
   }
+}
+
+/* Custom Styling for Carousel (Upcoming Programs) */
+.p-carousel .p-carousel-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-carousel .p-carousel-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.p-carousel .p-carousel-item .program-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.p-carousel .p-carousel-item .program-content h4,
+.p-carousel .p-carousel-item .program-content p {
+  color: #fff;
+}
+
+.p-carousel .p-carousel-item .program-content strong {
+  color: #e9c46a;
 }
