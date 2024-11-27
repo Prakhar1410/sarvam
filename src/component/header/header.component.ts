@@ -9,8 +9,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  // Initial icon class for light mode
   iconClass: string = 'pi pi-moon'; // Moon icon for dark mode toggle
+  menuOpen: boolean = false; // To track the menu visibility
 
   // Toggle dark mode and update icon
   toggleDarkMode() {
@@ -23,5 +23,10 @@ export class HeaderComponent {
     } else {
       this.iconClass = 'pi pi-moon'; // Moon icon when dark mode is inactive
     }
+  }
+
+  // Toggle the menu visibility on mobile
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen; // Toggle the menu's open state
   }
 }
