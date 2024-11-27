@@ -4,7 +4,14 @@
       <img src="assets/logo.jpg" alt="SARVAM NGO Logo" class="logo-img" />
       <span class="logo-name">Sarvam</span>
     </div>
-    <nav class="nav">
+    
+
+    <!-- Hamburger Icon for Small Screens -->
+    <div class="hamburger-icon" (click)="toggleMenu()">
+      <i class="pi pi-bars"></i> <!-- Hamburger icon -->
+    </div>
+
+    <nav class="nav" [class.open]="menuOpen">
       <ul>
         <li><a routerLink="/home" routerLinkActive="active"><i class="pi pi-home"></i> Home</a></li>
         <li><a routerLink="/about" routerLinkActive="active"><i class="pi pi-info-circle"></i> About Us</a></li>
@@ -14,7 +21,7 @@
         <li><a routerLink="/donate" routerLinkActive="active"><i class="pi pi-indian-rupee"></i> Donate</a></li>
       </ul>
     </nav>
-    <!-- Dark Mode Icon -->
+
     <div class="dark-mode-icon" (click)="toggleDarkMode()">
       <i [class]="iconClass"></i> <!-- Dynamic icon based on dark mode status -->
     </div>

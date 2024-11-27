@@ -10,12 +10,14 @@ body {
   background-color: #264653; /* Adjusted for green tone */
   color: #fff;
   padding: 10px 30px;
+  position: relative; /* To ensure that the header is well structured */
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Ensure elements wrap on smaller screens */
 }
 
 .logo {
@@ -47,7 +49,7 @@ body.dark-mode .logo-name {
   list-style: none;
   display: flex;
   gap: 20px;
-  margin: 0;
+  margin-left: 190px;
   padding: 0;
   justify-content: flex-start;
   transition: all 0.3s ease;
@@ -77,20 +79,6 @@ body.dark-mode .logo-name {
   font-weight: bold;
 }
 
-/* Theme Toggle Styles */
-.theme-toggle {
-  cursor: pointer;
-  font-size: 1.5rem;
-}
-
-.pi-sun {
-  color: #f39c12; /* Sun icon color */
-}
-
-.pi-moon {
-  color: #fff; /* Moon icon color */
-}
-
 /* Dark Mode Adjustments */
 body.dark-mode {
   background-color: #1e1e1e; /* Dark background */
@@ -118,7 +106,7 @@ body.dark-mode .nav ul li a:hover {
   color: #1e1e1e; /* Dark background for hover */
 }
 
-body.dark-mode .theme-toggle i {
+body.dark-mode .dark-mode-icon i {
   color: #f39c12; /* Sun icon color */
 }
 
@@ -139,13 +127,69 @@ body.dark-mode .dark-mode-icon {
   display: none; /* Hide dark mode icon in dark mode */
 }
 
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none; /* Hide by default on larger screens */
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.hamburger-icon i {
+  color: #fff;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .logo-img {
+    width: 100px; /* Smaller logo on mobile devices */
+  }
+
   .nav ul {
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
+    width: 100%; /* Ensure nav takes full width on mobile */
+    display: none; /* Initially hide the nav on mobile */
   }
+
+  .nav.open ul {
+    display: flex; /* Show nav when 'open' class is added */
+  }
+
+  .nav ul li a {
+    width: 100%; /* Ensure nav items take full width */
+    padding: 10px;
+    text-align: left; /* Align text to the left */
+  }
+
+  .hamburger-icon {
+    display: block; /* Show hamburger icon on smaller screens */
+  }
+
+  .header {
+    padding: 10px 20px;
+  }
+
+  /* Toggle icon positioning */
+  .dark-mode-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
   .logo-img {
-    width: 100px;
+    width: 80px; /* Even smaller logo on extra-small devices */
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .nav ul li a {
+    font-size: 0.9rem; /* Smaller text size on mobile */
   }
 }
